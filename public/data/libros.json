@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Rayuela",
+    "author": "Julio Cortázar",
+    "price": 8900,
+    "category": "ficción",
+    "description": "Obra icónica de Julio Cortázar que rompe las reglas de la narrativa tradicional. Un viaje literario por París y Buenos Aires.",
+    "imageUrl": "/data/images/rayuela.jpg"
+  },
+  {
+    "id": "2",
+    "name": "El túnel",
+    "author": "Ernesto Sabato",
+    "price": 7200,
+    "category": "ficción",
+    "description": "Novela intensa de Ernesto Sabato que explora la soledad y la obsesión de un pintor atrapado en su propia mente.",
+    "imageUrl": "/data/images/el-tunel.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Fervor de Buenos Aires",
+    "author": "Jorge Luis Borges",
+    "price": 6500,
+    "category": "poesía",
+    "description": "Primer libro de poemas de Jorge Luis Borges, lleno de nostalgia, calles y esquinas porteñas.",
+    "imageUrl": "/data/images/fervor-buenos-aires.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Martín Fierro",
+    "author": "José Hernández",
+    "price": 9500,
+    "category": "historia",
+    "description": "Poema épico de la literatura argentina que retrata la vida del gaucho Martín Fierro y la identidad nacional.",
+    "imageUrl": "/data/images/martin-fierro.jpg"
+  }
+]

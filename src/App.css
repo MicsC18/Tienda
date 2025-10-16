@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f3f4f6;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+#root,
+main {
+  padding-bottom: 350px; /* igual a la altura del footer */
+}
