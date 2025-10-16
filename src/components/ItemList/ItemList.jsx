@@ -9,7 +9,7 @@ export const ItemList = ({ lista }) => {
           lista.map((libros) => (
             <Link to={`/detail/${libros.id}`} key={libros.id}>
               <Item {...libros}>
-                <button>Enviar al carrito</button>
+                <button>Ver más</button>
               </Item>
             </Link>
           ))

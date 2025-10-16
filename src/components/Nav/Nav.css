@@ -39,7 +39,10 @@
 .nav-links a:hover {
   color: #0077c8;
 }
-
+.in-cart {
+  color: black;
+  margin-left: 4px;
+}
 /* ---------- Responsive ---------- */
 
 .nav-toggle {
