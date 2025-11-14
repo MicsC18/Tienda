@@ -1,0 +1,75 @@
+/* ---------- TARJETA LOGIN ---------- */
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.85);
+  /*backdrop-filter: blur(10px);*/
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 119, 200, 0.25);
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ---------- TÍTULO ---------- */
+.login-card h2 {
+  color: #0077c8;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* ---------- CAMPOS ---------- */
+.login-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.login-card label {
+  font-size: 0.9rem;
+  color: #005a9e;
+  font-weight: 500;
+}
+
+.login-card input {
+  padding: 0.65rem 0.75rem;
+  border: 1.5px solid #00a3e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #003d66;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #0077c8;
+  box-shadow: 0 0 0 3px rgba(0, 119, 200, 0.2);
+}
+
+/* ---------- BOTÓN ---------- */
+.login-card button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0077c8 0%, #00a3e0 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-card button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 200, 0.35);
+}
+
+.login-card button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 119, 200, 0.3);
+}

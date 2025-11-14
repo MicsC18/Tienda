@@ -1,0 +1,149 @@
+/* ---------- VARIABLES (siguen siendo globales) ---------- */
+:root {
+  --celeste-arg: #74b9ff;
+  --celeste-osc: #0984e3;
+  --celeste-pálido: #dfefff;
+  --blanco: #ffffff;
+  --oro-arg: #f9ca24;
+  --gris-texto: #2d3436;
+  --gris-borde: #b2bec3;
+  --error: #e17055;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radio: 8px;
+}
+
+/* ---------- RESET SOLO DENTRO DEL FORMULARIO ---------- */
+.form-arg *,
+.form-arg *::before,
+.form-arg *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- CONTENEDOR ---------- */
+.form-arg section {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+/* ---------- TÍTULO ---------- */
+.form-arg h2 {
+  text-align: center;
+  color: var(--celeste-osc);
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- CAMPOS ---------- */
+.form-arg div {
+  margin-bottom: 18px;
+}
+
+.form-arg label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--gris-texto);
+  font-size: 0.9rem;
+}
+
+.form-arg input[type="text"],
+.form-arg input[type="email"],
+.form-arg input[type="number"],
+.form-arg textarea,
+.form-arg select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--gris-borde);
+  border-radius: var(--radio);
+  background: var(--celeste-pálido);
+  color: var(--gris-texto);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-arg input:focus,
+.form-arg textarea:focus,
+.form-arg select:focus {
+  outline: none;
+  border-color: var(--celeste-arg);
+  box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.25);
+}
+
+.form-arg textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ---------- INPUT FILE (si lo necesitas) ---------- */
+.form-arg input[type="file"] {
+  padding: 6px;
+  border: 1px dashed var(--celeste-arg);
+  border-radius: var(--radio);
+  background: var(--celeste-pálido);
+  color: var(--gris-texto);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.form-arg input[type="file"]:hover {
+  border-style: solid;
+  background: #e5f3ff;
+}
+
+/* ---------- CHECKBOX (términos) ---------- */
+.form-arg input[type="checkbox"] {
+  accent-color: var(--celeste-osc);
+  margin-right: 6px;
+  transform: scale(1.15);
+}
+
+/* ---------- BOTÓN ---------- */
+.form-arg .btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radio);
+  background: linear-gradient(135deg, var(--celeste-arg), var(--celeste-osc));
+  color: var(--blanco);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.form-arg .btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(9, 132, 227, 0.3);
+}
+
+.form-arg .btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.form-arg .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------- ERRORES ---------- */
+.form-arg .error {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--error);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 520px) {
+  .form-arg section {
+    margin: 20px 16px;
+    padding: 24px 16px;
+  }
+}
