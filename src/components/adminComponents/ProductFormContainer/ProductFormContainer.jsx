@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ProductFormUI } from "../ProductFormUI/ProductFormUI";
 import { validateProduct } from "../../../utils/validateProducts";
-import { uploadToImgbb } from "../../../services/uploadImages";
+import { uploadToImgbb } from "../../../services/uploadimages";
 import { CreateLibro } from "../../../services/libros";
 
 export const ProductFormContainer = () => {
